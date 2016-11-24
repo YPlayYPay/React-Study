@@ -1,0 +1,120 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei",
+    "WenQuanYi Micro Hei", sans-serif;
+}
+
+body{
+    font-size: 1.8rem;
+}
+
+.mine{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-top: 0.2rem solid #381F0B;
+    border-bottom: 0.2rem solid #381F0B;
+    padding: 0.8rem 0;
+}
+
+.textMineHeight{
+    line-height: 4.7rem;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.info{
+    position: relative;
+    width: 8rem;
+}
+
+.info img{
+    width: 4rem;
+    border: 0.2rem solid #381F0B;
+    border-radius: 50%;
+    max-height: 4rem;
+    margin-right: 0.4rem;
+}
+.wrap{
+    background-color: #ccc;
+    margin: 0 10%
+}
+
+.body{
+    display: flex;
+    padding: 0.2rem 10% 0.5rem 10%;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.bodyitem{
+    flex-grow: 1;
+    text-align: center;
+    line-height: 4.7rem;
+    font-size: 2rem;
+}
+.body .bodyitem{
+    color: #64DD17
+}
+.body:nth-child(1) .bodyitem ,.body:nth-child(2) .bodyitem ,.body:nth-child(3) .bodyitem {
+    color:#E65100
+}
+
+
+.bodyitemInfo img{
+    width: 4rem;
+    border: 0.2rem solid #381F0B;
+    border-radius: 50%;
+    height: 4rem;
+    margin-right: 0.4rem;
+}
+
+.bodyitemInfo{
+    position: relative;
+    line-height: 4.7rem;
+}
+
+.header{
+    text-align: center;
+    height: 6rem;
+}
+
+.sfp{
+    display: flex;
+    width: 30%;
+    margin-left: 15%;
+}
+
+.sfp div{
+    line-height: 4.7rem;
+    text-align: center;
+    flex-grow: 1;
+}
+
+
+@media screen and (max-width: 420px) {
+   .mine{
+       margin: 0;
+   }
+   .body{
+       padding: 0.2rem 0 0.5rem 0;
+   }
+    .wrap{
+        margin: 0;
+    }
+    .sfp{
+        margin-left: 10%;
+    }
+    .info{
+        flex-basis: 100px
+    }
+
+}
+

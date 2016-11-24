@@ -1,10 +1,10 @@
 import 'babel-polyfill'
 import React from 'react'
 import { render } from 'react-dom'
-import App from './App'
+import Rank from './App'
 
 render(
-  <App />,
+  <Rank />,
   document.getElementById('app')
 );
 
