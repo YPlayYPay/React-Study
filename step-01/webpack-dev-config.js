@@ -53,6 +53,10 @@ module.exports = {
           test: /\.css$/,
           loader: 'style!css-loader?modules'
         }
+        ,{
+            test: /\.(png|jpg)$/,
+            loader: 'url?limit=10000&name=images/[name].[ext]',
+        }
     ]
   },
 

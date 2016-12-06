@@ -1,0 +1,110 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.header {
+    height: 4rem;
+    background-color: #53aee0;
+    line-height: 4rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    font-size: 1.4rem;
+}
+.header span{
+    position: absolute;
+    left: 1.8rem;
+    font-size: 2.5rem;
+}
+
+.other{
+    text-align: center;
+    position: relative;
+}
+
+.other span{
+    color:red;
+    position: absolute;
+    right: 25px;
+    top: 5px;
+    font-size: 2rem;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #71e0c8;
+}
+
+.info{
+    margin-top: 0.8rem;
+    color: #6f6a70;
+    margin-bottom: 3rem;
+}
+
+.info img{
+    width: 5rem;
+    border: 0.2rem solid #2c89cb;
+    border-radius: 50%;
+    height: 5rem;
+}
+
+.info div{
+    margin-top: .4rem;
+    font-size: 1.4rem;
+}
+
+.caiquan{
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 4.5rem;
+}
+
+.result{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.result img{
+    width: 8rem;
+    height: 8rem;
+    margin-top: -9rem;
+}
+
+.mine{
+     text-align: center;
+}
+
+.mine>div{
+    margin-top: 6rem;
+}
+
+.mine>img{
+    width: 5rem;
+    height: 5rem;
+    margin-top: -2.8rem;
+}
+
+.picSelect{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+.picSelect img{
+    width: 5rem;
+    height: 5rem;
+
+}
+
+
+.mine>div>img{
+    width: 5rem;
+    border: 0.2rem solid #2c89cb;
+    border-radius: 50%;
+    height: 5rem;
+}
