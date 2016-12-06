@@ -6,37 +6,24 @@ import styles from "./fight.css";
 
 const Fight=()=>(
     <div className={styles.fight}>
-            <Header />
-            <Other />
-            <Result />
-            <Self />
-    </div>
-);
-
-const Header = ()=> {
-        return (
-            <div className={styles.header}>
-                <span>&lt;</span>
-                博弈游戏
+            <div>
+                <div className={styles.header}>
+                    <span>&lt;</span>
+                    博弈游戏
+                </div>
+                <div className={styles.other}>
+                    <span>10</span>
+                    <div className={styles.info}>
+                        <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2823673366,2283527722&fm=116&gp=0.jpg" alt=""/>
+                        <div>JoJoNice</div>
+                    </div>
+                    <img src={require('./img/a.png')} alt="" className={styles.caiquan}/>
+                </div>
+                <div className={styles.result}>
+                    <img src={require('./img/d.png')} alt="" />
+                </div>
             </div>
-        )
-    }
-
-
-const Other =()=>(
-    <div className={styles.other}>
-        <span>10</span>
-        <div className={styles.info}>
-            <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2823673366,2283527722&fm=116&gp=0.jpg" alt=""/>
-            <div>JoJoNice</div>
-        </div>
-        <img src={require('./img/a.png')} alt="" className={styles.caiquan}/>
-    </div>
-);
-
-const Result = () => (
-    <div className={styles.result}>
-        <img src={require('./img/d.png')} alt="" />
+            <Self />
     </div>
 );
 
