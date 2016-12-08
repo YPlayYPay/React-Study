@@ -2,7 +2,7 @@ import 'babel-polyfill'
 import React from 'react'
 import { render } from 'react-dom'
 // import Fight from './App2'
-import Rank from './App'
+ import Rank from './App'
 
 render(
   <Rank />,

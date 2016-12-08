@@ -42,7 +42,7 @@ module.exports = {
   // 空字符串在此是为了resolve一些在import文件时不带文件扩展名的表达式
 
   module: {
-    loaders: [
+    loaders:      [
       {
         test: /\.js$/,
         loaders: ['babel'],
