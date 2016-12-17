@@ -1,20 +1,12 @@
 /**
- * Created by user2 on 2016-11-22.
+ * Created by user2 on 2016-12-14.
  */
 import React, { Component, PropTypes } from 'react';
-import styles from "./Rank.css";
+import styles from "./App3.css";
 
 let data={
     err:{},
-    mine:{
-        url:'https://avatars.githubusercontent.com/u/4639625?v=3',
-        name:'leo',
-        rank:'1',
-        tone:'10',
-        jian:'5',
-        bu:'2',
-        score:'12121'
-    },
+    people:100,
     body:[
         {
             url:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2823673366,2283527722&fm=116&gp=0.jpg',
@@ -111,58 +103,48 @@ let data={
 
 };
 
-
-const Rank =()=>(
-    <div className={styles.rank}>
-        <div className={styles.header}>
-            超级排行榜
+const Table=()=>(
+    <div>
+        <div className={styles.head}>
+            总人数:{data.people}
         </div>
-        <Mine data={data}/>
-        <Body data={data}/>
-    </div>
-);
-
-const Mine =({data})=>(
-    <div className={styles.mine}>
-        <div className={styles.info} >
-            <img src={data.mine.url}/>
-            <div style={{paddingTop: '1.2rem'}}>
-                <div style={{maxWidth: '120px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap'}}>{data.mine.name}</div>
-                <div>{data.mine.rank}</div>
-            </div>
+        <div className={styles.title}>
+            <div style={{flexBasis:'131px'}}></div>
+            <div>石头</div>
+            <div>剪刀</div>
+            <div>布</div>
+            <div>总分</div>
         </div>
-        <div className={styles.textMineHeight}>
-            <div style={{fontSize:'1.4rem'}}>分数</div>
-            {data.mine.score}
-        </div>
-    </div>
-);
-
-const Body =({data})=>(
-    <div  className={styles.wrap}>
-        {
-            data.body.map((result,i)=> {
-                    return (
-                        <div key={i} className={styles.body}>
-                            <div className={ styles.bodyitemInfo }>
-                                    <span style={{display:'inline-block',height: 32,width: 30, textAlign: 'center', lineHeight: '32px'}}>
-                                        {result.rank}
-                                    </span>
-                                <img src={result.url} style={{display:'inline-block' ,verticalAlign: 'middle'}}/>
-                                <span style={{maxWidth: '120px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',display:'inline-block',verticalAlign:'middle'}}>
-                                        {result.name}
+            {
+                data.body.map((item)=>{
+                    return(
+                        <div className={styles.main}>
+                            <div className={styles.info}>
+                                <span >
+                                    {item.rank}
                                 </span>
+                                <img src={item.url} />
                             </div>
-                            <div className={styles.bodyitem + ' ' + styles.fontStyle}>
-                                {result.score }
+                            <div style={{maxWidth: '120px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',display:'inline-block',verticalAlign:'middle',textAlign:'left',lineHeight:'54px',marginLeft:'10px'}}>
+                                {item.name}
+                            </div>
+                            <div>
+                                {item.tone}
+                            </div>
+                            <div>
+                                {item.jian}
+                            </div>
+                            <div>
+                                {item.bu}
+                            </div>
+                            <div>
+                                {item.score}
                             </div>
                         </div>
                     )
-                }
-            )
-        }
-    </div>
+                })
+            }
+        </div>
 );
 
-
-export default Rank
+export default Table

@@ -1,0 +1,47 @@
+.head{
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+}
+.title{
+    display: flex;
+    margin-top: 10px;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 2px solid #381F0B;
+}
+.title div{
+    flex-grow: 1;
+    text-align: center;
+    flex-basis: 50px;
+}
+.main{
+    height: 60px;
+    display: flex;
+    line-height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+.main div{
+    flex-grow: 1;
+    flex-basis: 50px;
+    text-align: center;
+}
+
+.info{
+  position: relative;
+}
+.info span:first-child{
+    position: absolute;
+    top: 46%;
+    left: 10%;
+    line-height: 0;
+}
+
+.info img{
+    width: 28px;
+    border: 2px solid #381F0B;
+    border-radius: 50%;
+    height:28px;
+    margin: 12px 4px 0 30px;
+    display: block;
+}

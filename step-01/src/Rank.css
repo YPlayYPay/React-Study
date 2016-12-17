@@ -34,7 +34,6 @@ html{
 }
 
 .info{
-
     flex-grow: 2;
     display: flex;
 }

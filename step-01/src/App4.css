@@ -1,0 +1,8 @@
+
+.detail{
+    display: flex;
+    flex-direction:column;
+}
+.detail>div{
+    flex-grow: 1;
+}
